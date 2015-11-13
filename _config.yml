@@ -1,7 +1,6 @@
 # Site settings
 
 title:         EncloseJS
-email:         igor@klopov.com
 description:   Compile your Node.js project. No sources aboard.
 baseurl:       /
 url:           http://enclosejs.com
