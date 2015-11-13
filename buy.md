@@ -74,4 +74,4 @@ license key and instructions how to get full EncloseJS version
 and to get future updates.
 
 If you have any question, contact support directly:
-igor (at) klopov.com.
+igor (at) klopov (dot) com.
