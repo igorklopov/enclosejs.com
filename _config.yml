@@ -1,0 +1,24 @@
+# Site settings
+
+title:         EncloseJS
+email:         igor@klopov.com
+description:   Compile your Node.js project. No sources aboard.
+baseurl:       /
+url:           http://enclosejs.com
+
+# Directories
+
+includes_dir:  includes
+layouts_dir:   layouts
+
+# Build settings
+
+markdown:      kramdown
+
+# Custom vars
+
+github:
+  repo:        https://github.com/igorklopov/enclose
+  docs:        https://github.com/igorklopov/enclose/wiki/02.Packaging
+  issues:      https://github.com/igorklopov/enclose/issues
+gitter:        https://gitter.im/igorklopov/enclose

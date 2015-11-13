@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.htm %}
+
+  <body>
+
+    {% include sidebar.htm %}
+
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
+  <script>
+    var host = window.location.host;
+    var deploy = "enclosejs.com";
+    var develop = "dev.enclosejs.com";
+    if ((host !== deploy) && (host !== develop)) {
+      window.location.replace("http://" + deploy);
+    }
+  </script>
+</html>
