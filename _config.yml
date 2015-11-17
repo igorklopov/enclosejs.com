@@ -5,11 +5,6 @@ description:   Compile your Node.js project. No sources aboard.
 baseurl:       /
 url:           http://enclosejs.com
 
-# Directories
-
-includes_dir:  includes
-layouts_dir:   layouts
-
 # Build settings
 
 markdown:      kramdown
