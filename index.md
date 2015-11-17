@@ -25,9 +25,7 @@ npm install -g enclose
 
 ### Usage
 
-```
-enclose --help
-```
+Run `enclose` without arguments to see help.
 
 In short, as input you specify the entry file of your project
 `/path/project.js`. As output you get a standalone executable
