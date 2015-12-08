@@ -7,7 +7,7 @@ url:           http://enclosejs.com
 
 # Build settings
 
-markdown:      kramdown
+markdown:      redcarpet
 
 # Custom vars
 

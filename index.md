@@ -29,8 +29,7 @@ Run `enclose` without arguments to see help.
 
 In short, as input you specify the entry file of your project
 `/path/app.js`. As output you get a standalone executable
-`/path/app`. When it is run, it does the same as
-`node /path/app.js`.
+`/path/app`. When it is run, it does the same as `node /path/app.js`
 
 ### Command line of the executable
 
