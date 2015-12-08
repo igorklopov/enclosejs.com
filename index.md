@@ -28,13 +28,13 @@ npm install -g enclose
 Run `enclose` without arguments to see help.
 
 In short, as input you specify the entry file of your project
-`/path/project.js`. As output you get a standalone executable
-`/path/project`. When it is run, it does the same as
-`node /path/project.js`.
+`/path/app.js`. As output you get a standalone executable
+`/path/app`. When it is run, it does the same as
+`node /path/app.js`.
 
 ### Command line of the executable
 
-Command line call `./project a b` is equivalent to `node ./project.js a b`.
+Command line call `./app a b` is equivalent to `node ./app.js a b`
 
 ### Dependencies
 
@@ -88,7 +88,7 @@ function myfunc() { [native code] }
 ### Versions of Node.js
 
 You can choose what runtime version to wrap your project in -
-0.12.x, 2.5.0 (io.js), 4.2.x or stable.
+0.12.x, 4.2.x or 5.x.
 
 ### Vanilla Node.js
 
@@ -108,7 +108,7 @@ Projects like `npm`, `browserify`, `eslint` can be compiled using EncloseJS (see
 [examples directory](https://github.com/igorklopov/enclose/tree/master/examples/22-npm)).
 Probably, your existing project can be compiled too, with minimal
 adjustments. The adjustments preserve the ability to run you project
-via `node ./project.js`
+via `node ./app.js`
 
 ### Platforms
 
