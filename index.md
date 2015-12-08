@@ -127,8 +127,7 @@ Native modules (.node files) are supported for all platforms
 name to be 'node.exe'. In order to make a module compatible with your
 'myserver.exe' EncloseJS makes a copy of the module, patches
 IAT of the copy (binds it to 'myserver.exe'), and then calls `dlopen`
-against the copy. This workaround will be removed as soon as most
-modules support [win_delay_load_hook](https://github.com/nodejs/node-gyp/blob/master/src/win_delay_load_hook.c).
+against the copy. This workaround will be deprecated soon.
 
 ### License
 
