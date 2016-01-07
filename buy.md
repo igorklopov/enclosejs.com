@@ -135,7 +135,7 @@ igor (at) klopov (dot) com.
     var query = window.location.search;
     query = query.split("?")[1];
     if (!query) return;
-    if ((query.toUpperCase() === "RUB") || {
+    if ((query.toUpperCase() === "RUB") ||
         (query.toUpperCase() === "RUR")) {
       document.getElementById("RUB").style.display = "";
     } else
