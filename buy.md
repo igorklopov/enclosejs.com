@@ -74,6 +74,25 @@ plan.
         </form>
       </td>
     </tr>
+    <tr id="GBP" style="display: none">
+      <td colspan="2">Price in GBP</td>
+      <td style="text-align: center">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="YMETN5PY242X2" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </td>
+      <td style="text-align: center">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="E4TALGR2L4X3S" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </td>
+    </tr>
     <tr id="RUB" style="display: none">
       <td colspan="2">Price in RUB</td>
       <td style="text-align: center">
@@ -119,6 +138,9 @@ igor (at) klopov (dot) com.
     if ((query.toUpperCase() === "RUB") || {
         (query.toUpperCase() === "RUR")) {
       document.getElementById("RUB").style.display = "";
+    } else
+    if (query.toUpperCase() === "GBP") {
+      document.getElementById("GBP").style.display = "";
     }
   })();
 </script>
