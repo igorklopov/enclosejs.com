@@ -16,4 +16,4 @@ may be unsupported on other computer.
 
 You installed node via `sudo apt-get install nodejs`. Just
 install one more package `sudo apt-get install nodejs-legacy`.
-But there are variants: http://stackoverflow.com/questions/20057790
+But there are variants: http://stackoverflow.com/questions/21168141
