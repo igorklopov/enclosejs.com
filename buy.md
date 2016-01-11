@@ -81,7 +81,7 @@ plan.
       <td style="text-align: center">&#163;65/year</td>
     </tr>
     <tr id="GBP2" style="display: none">
-      <td colspan="2">Price in GBP</td>
+      <td colspan="2"></td>
       <td style="text-align: center">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
@@ -106,7 +106,7 @@ plan.
       <td style="text-align: center">6500/year</td>
     </tr>
     <tr id="RUB2" style="display: none">
-      <td colspan="2">Price in RUB</td>
+      <td colspan="2"></td>
       <td style="text-align: center">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
@@ -133,7 +133,7 @@ plan.
     <tr>
       <td colspan="2">PayPal notes</td>
       <td style="text-align: center" colspan="2">
-        Please use only <b>personal</b> PayPal accounts
+        Please use only <b>personal</b> PayPal accounts to buy EncloseJS
       </td>
     </tr>
   </tbody>
