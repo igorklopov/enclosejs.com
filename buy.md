@@ -133,7 +133,7 @@ plan.
     <tr>
       <td>PayPal notes</td>
       <td style="text-align: center" colspan="3">
-        Please use only <b>personal</b> PayPal accounts to buy EncloseJS
+        Please use only <b>personal</b> PayPal accounts
       </td>
     </tr>
   </tbody>
