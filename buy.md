@@ -50,13 +50,13 @@ plan.
       <td style="text-align: center" colspan="2">Non-commercial and<br />commercial use</td>
     </tr>
     <tr>
-      <td>Cost</td>
+      <td>Price in USD</td>
       <td style="text-align: center">Free</td>
       <td style="text-align: center">$9/month</td>
       <td style="text-align: center">$100/year</td>
     </tr>
-    <tr id="USD">
-      <td colspan="2">Price in USD</td>
+    <tr>
+      <td colspan="2"></td>
       <td style="text-align: center">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
@@ -75,6 +75,12 @@ plan.
       </td>
     </tr>
     <tr id="GBP" style="display: none">
+      <td>Price in GBP</td>
+      <td style="text-align: center">Free</td>
+      <td style="text-align: center">&#163;6/month</td>
+      <td style="text-align: center">&#163;65/year</td>
+    </tr>
+    <tr id="GBP2" style="display: none">
       <td colspan="2">Price in GBP</td>
       <td style="text-align: center">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -94,6 +100,12 @@ plan.
       </td>
     </tr>
     <tr id="RUB" style="display: none">
+      <td>Price in RUB</td>
+      <td style="text-align: center">Free</td>
+      <td style="text-align: center">600/month</td>
+      <td style="text-align: center">6500/year</td>
+    </tr>
+    <tr id="RUB2" style="display: none">
       <td colspan="2">Price in RUB</td>
       <td style="text-align: center">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -118,6 +130,12 @@ plan.
         <A HREF="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&amp;alias=LX4T933HK6PFN"><IMG SRC="https://www.paypalobjects.com/en_US/i/btn/btn_unsubscribe_LG.gif" BORDER="0" style="display: inline; margin: 0" /></A>
       </td>
     </tr>
+    <tr>
+      <td colspan="2">PayPal notes</td>
+      <td style="text-align: center" colspan="2">
+        Please use only <b>personal</b> PayPal accounts
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -131,16 +149,20 @@ If you have any question, contact support directly:
 igor (at) klopov (dot) com.
 
 <script>
+  function show_currency(c) {
+    document.getElementById(c).style.display = "";
+    document.getElementById(c + "2").style.display = "";
+  }
   (function() {
     var query = window.location.search;
     query = query.split("?")[1];
     if (!query) return;
+    if (query.toUpperCase() === "GBP") {
+      show_currency("GBP");
+    } else
     if ((query.toUpperCase() === "RUB") ||
         (query.toUpperCase() === "RUR")) {
-      document.getElementById("RUB").style.display = "";
-    } else
-    if (query.toUpperCase() === "GBP") {
-      document.getElementById("GBP").style.display = "";
+      show_currency("RUB");
     }
   })();
 </script>
